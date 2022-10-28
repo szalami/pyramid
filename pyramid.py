@@ -18,18 +18,14 @@ def build(x):
     print()
 
 def getNumber():
-    x = int(input("Milyen széles legyen a piramis alja:"))
+    x = int(input("Milyen magas legyen a piramis: "))
     
-    a = x % 2
+    x = x * 2 - 1
     
-    if( a != 1):
-        print("Páratlan számok kérek!")
-        getNumber()
-    else:
-        import os
-        clear = lambda: os.system('cls')
-        clear()
-        build(x)
+    import os
+    clear = lambda: os.system('cls')
+    clear()
+    build(x)
 
 
 getNumber()

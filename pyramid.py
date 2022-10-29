@@ -3,29 +3,29 @@
 from turtle import clear
 
 
-def build(x):  
-    for i in range(0, x, 2):
-        e = int((x - i ) / 2)   # spaces in left
-        f = x - 2 * e           # number of '@'
+def build(base):  
+    for i in range(0, base, 2):
+        space = int((base - i ) / 2)   # spaces in left
+        at = base - 2 * space           # number of '@'
     
-        for j in range(e):
+        for j in range(space):
                 print(" ", end="")
 
-        for k in range(f):
+        for k in range(at):
                 print("@", end="")  
         
         print()
     print()
 
 def getNumber():
-    x = int(input("Milyen magas legyen a piramis: "))
+    base = int(input("Milyen magas legyen a piramis: "))
     
-    x = x * 2 - 1   # calculate base width
+    base = base * 2 - 1   # calculate base width
     
     import os
     clear = lambda: os.system('cls')
     clear()
-    build(x)
+    build(base)
 
 
 getNumber()

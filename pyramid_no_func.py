@@ -6,7 +6,7 @@ clear()
 
 base = int(input("Milyen magas legyen a piramis: "))
 
-base = base * 2 - 1                    # calculate base width
+base = base * 2 - 1                    # calc base width
 
 for i in range(0, base, 2):
         
@@ -14,9 +14,7 @@ for i in range(0, base, 2):
         
         at = base - 2 * space          # calc number of '@'
     
-        print(space * " ", end="") 
-
-        print(at * "@", end="")    
+        print(space * " ", at * "@", end="" )   
         
         print()
         

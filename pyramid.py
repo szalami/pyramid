@@ -7,15 +7,14 @@ def build(base):
     print()
     
     for i in range(0, base, 2):
-        space = int((base - i ) / 2)   # spaces in left
+        space = int((base - i ) / 2)    # spaces in left
         at = base - 2 * space           # number of '@'      
-        print(space * " ", end="") 
-        print(at * "@", end="")        
+        print(space * " ", at * "@", end="")       
         print()
     print()
 
 def getNumber():
-    base = int(input("Milyen magas legyen a piramis: "))  
+    base = int(input("Milyen magas legyen a piramis: "))
     base = base * 2 - 1   # calculate base width
     build(base)
 

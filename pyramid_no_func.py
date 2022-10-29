@@ -4,15 +4,13 @@ import os
 clear = lambda: os.system('cls')
 clear()
 
-base = int(input("Milyen magas legyen a piramis: "))
+height = int(input("Milyen magas legyen a piramis: "))
+print()
 
-base = base * 2 - 1                    # calc base width
-
-for i in range(0, base, 2):
+for i in range(1, height+1):
         
-        space = int((base - i ) / 2)   # calc spaces in left
-        
-        at = base - 2 * space          # calc number of '@'
+        space = (height + 1) - i 
+        at = i * 2 - 1
     
         print(space * " ", at * "@", end="" )   
         

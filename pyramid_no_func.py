@@ -7,9 +7,9 @@ clear()
 height = int(input("Milyen magas legyen a piramis: "))
 print()
 
-for i in range(1, height+1):
+for i in range(1, height + 1):
         
-        space = (height + 1) - i 
+        space = height - i 
         at = i * 2 - 1
     
         print(space * " ", at * "@", end="" )   

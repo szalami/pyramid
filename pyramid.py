@@ -9,7 +9,7 @@ def build(height):
     for i in range(1, height + 1):
         space = height - i 
         at = i * 2 - 1   
-        print(space * "x", at * "@", end="")       
+        print(space * " ", at * "@", end="")       
         print()
     print()
 
